@@ -1,0 +1,27 @@
+.input__checked:checked ~ .label__checked {
+  background: #000000;
+  color: white;
+}
+.label__checked::after {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  transition: 0.3s;
+}
+.input__checked:checked ~ .label__checked::after {
+  background: #000000;
+  color: white;
+}
+
+.text__color {
+  color: red;
+}
+.bg__degradado {
+  background: linear-gradient(
+    to right,
+    rgb(243, 244, 246),
+    rgba(209, 213, 219, 0.8)
+  );
+}
